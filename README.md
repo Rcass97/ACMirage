@@ -11,3 +11,8 @@ This website made by me is a reimagining of the information about the game in a 
 Wanting to try new frameworks I landed upon Tailwind CSS. This website utilizies Tailwind to the best of my ability.
 
 Please Enjoy! *Nothing is True, Everything is Permitted*
+
+
+
+
+Here is the original site for reference: https://www.ubisoft.com/en-us/game/assassins-creed/mirage
