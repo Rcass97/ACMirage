@@ -706,6 +706,10 @@ body {
   width: 100%;
 }
 
+.w-28 {
+  width: 7rem;
+}
+
 .max-w-screen-xl {
   max-width: 1280px;
 }
