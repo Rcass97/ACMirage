@@ -550,6 +550,10 @@ body {
   position: relative;
 }
 
+.\!top-\[110px\] {
+  top: 110px !important;
+}
+
 .bottom-2 {
   bottom: 0.5rem;
 }
@@ -582,48 +586,8 @@ body {
   top: 2rem;
 }
 
-.top-\[\] {
-  top: ;
-}
-
-.top-\[-20\] {
-  top: -20;
-}
-
-.top-\[-20px\] {
-  top: -20px;
-}
-
-.top-\[-200px\] {
-  top: -200px;
-}
-
-.top-\[-2300px\] {
-  top: -2300px;
-}
-
 .top-\[-300px\] {
   top: -300px;
-}
-
-.\!top-0 {
-  top: 0px !important;
-}
-
-.\!top-20 {
-  top: 5rem !important;
-}
-
-.\!top-\[110\] {
-  top: 110 !important;
-}
-
-.\!top-\[110px\] {
-  top: 110px !important;
-}
-
-.bottom-0 {
-  bottom: 0px;
 }
 
 .z-0 {
@@ -638,22 +602,9 @@ body {
   z-index: 20;
 }
 
-.m-auto {
-  margin: auto;
-}
-
-.m-0 {
-  margin: 0px;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .mb-4 {
@@ -692,22 +643,6 @@ body {
   margin-top: auto;
 }
 
-.mb-\[-98\] {
-  margin-bottom: -98;
-}
-
-.mb-\[-98px\] {
-  margin-bottom: -98px;
-}
-
-.mb-auto {
-  margin-bottom: auto;
-}
-
-.mr-auto {
-  margin-right: auto;
-}
-
 .block {
   display: block;
 }
@@ -720,20 +655,8 @@ body {
   display: flex;
 }
 
-.\!flex {
-  display: flex !important;
-}
-
-.grid {
-  display: grid;
-}
-
 .hidden {
   display: none;
-}
-
-.\!hidden {
-  display: none !important;
 }
 
 .aspect-video {
@@ -752,60 +675,28 @@ body {
   height: 100%;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .min-h-screen {
   min-height: 100vh;
-}
-
-.min-h-full {
-  min-height: 100%;
-}
-
-.w-2\/4 {
-  width: 50%;
-}
-
-.w-28 {
-  width: 7rem;
-}
-
-.w-full {
-  width: 100%;
-}
-
-.w-44 {
-  width: 11rem;
-}
-
-.w-8 {
-  width: 2rem;
 }
 
 .w-10 {
   width: 2.5rem;
 }
 
-.w-32 {
-  width: 8rem;
+.w-2\/4 {
+  width: 50%;
 }
 
-.w-96 {
-  width: 24rem;
-}
-
-.w-52 {
-  width: 13rem;
+.w-44 {
+  width: 11rem;
 }
 
 .w-60 {
   width: 15rem;
 }
 
-.max-w-screen-xl {
-  max-width: 1280px;
+.w-full {
+  width: 100%;
 }
 
 .max-w-3xl {
@@ -829,32 +720,12 @@ body {
   cursor: pointer;
 }
 
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-rows-1 {
-  grid-template-rows: repeat(1, minmax(0, 1fr));
-}
-
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
-}
-
 .flex-col {
   flex-direction: column;
 }
 
 .flex-wrap {
   flex-wrap: wrap;
-}
-
-.content-center {
-  align-content: center;
 }
 
 .items-start {
@@ -873,28 +744,12 @@ body {
   justify-content: space-between;
 }
 
-.gap-8 {
-  gap: 2rem;
-}
-
-.gap-4 {
-  gap: 1rem;
-}
-
-.gap-10 {
-  gap: 2.5rem;
-}
-
-.gap-14 {
-  gap: 3.5rem;
-}
-
 .gap-12 {
   gap: 3rem;
 }
 
-.self-center {
-  align-self: center;
+.gap-14 {
+  gap: 3.5rem;
 }
 
 .rounded {
@@ -930,11 +785,6 @@ body {
 .bg-yellow-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(202 138 4 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#142B3D\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(20 43 61 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-60 {
@@ -986,14 +836,6 @@ body {
   padding: 1.5rem;
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
-.p-20 {
-  padding: 5rem;
-}
-
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1002,10 +844,6 @@ body {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-
-.pt-20 {
-  padding-top: 5rem;
 }
 
 .text-left {
@@ -1102,18 +940,6 @@ body {
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hover\:scale-125:hover {
-  --tw-scale-x: 1.25;
-  --tw-scale-y: 1.25;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:scale-105:hover {
-  --tw-scale-x: 1.05;
-  --tw-scale-y: 1.05;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:scale-110:hover {
@@ -1214,14 +1040,6 @@ body {
 
   .md\:w-2\/4 {
     width: 50%;
-  }
-
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .md\:gap-12 {
-    gap: 3rem;
   }
 
   .md\:py-4 {
