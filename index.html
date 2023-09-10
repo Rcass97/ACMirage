@@ -6,26 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Assassin's Creed Mirage</title>
-    <link rel="icon" type="image/x-icon" href="../favicon/favicon.ico">
-    <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
+    <link rel="icon" type="image/x-icon" href="./favicon/favicon-32x32.png">
+    <link rel="stylesheet" href="./styles.css" media="print" onload="this.media='all'">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto&family=Roboto+Condensed&display=swap"
         rel="stylesheet" media="print" onload="this.media='all'">
 </head>
 
-<body style="background-image: url('../images/905cbc82d321beea1051babb4b6fc057.png'),
-    url('../images/ac-mirage-1663336669221.png'); background-repeat: repeat, no-repeat; background-attachment: fixed;
+<body style="background-image: url('./images/905cbc82d321beea1051babb4b6fc057.png'),
+    url('./images/ac-mirage-1663336669221.png'); background-repeat: repeat, no-repeat; background-attachment: fixed;
     background-size: contain, cover; background-position: center;" class="flex flex-col min-h-screen">
 
     <header class="">
         <nav
-            class="flex items-center justify-between flex-wrap bg-gradient-to-b from-[#142B3D] to-black p-6 border-b-2 border-white">
-            <div class="flex items-center flex-shrink-0 text-white mr-6 h-auto w-28">
-                <img class="object-contain" src="../images/Mirage-Logo.png"
+            class="flex items-center justify-between flex-wrap bg-gradient-to-b from-[#142B3D] to-black p-6 border-b-2 border-white z-20">
+            <div class="flex items-center flex-shrink-0 text-white mr-6 h-auto w-44">
+                <img class="object-contain" src="./images/Mirage-Logo-2.png"
                     alt="Assassin's Creed Mirage Assassin Logo">
             </div>
-            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+            <div class="w-full hidden flex-grow lg:flex lg:items-center lg:w-auto ">
                 <div class="text-3xl lg:flex-grow">
                     <a href="index.html"
                         class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-700 hover:bg-white mr-4 hover:rounded-md">
@@ -40,7 +40,40 @@
                         News
                     </a>
                 </div>
-
+                <div>
+                    <a href="#"
+                        class="inline-block text-3xl px-4 py-2 leading-none border rounded text-white border-white bg-yellow-600 hover:border-transparent hover:text-yellow-700 hover:bg-white mt-4 lg:mt-0">Pre-Order</a>
+                </div>
+            </div>
+            <div class="lg:hidden w-10">
+                <button class="text-white" onclick="handleClick()">
+                    <img class="invert w-full" src="./images/list.png">
+                </button>
+            </div>
+        </nav>
+        <nav>
+            <div class="w-full flex-col absolute top-[-300px] z-10 duration-200 transition-all items-start bg-gradient-to-b from-black to-[#142B3D] border-b-2 border-white p-4"
+                id="dropdown">
+                <ul class="text-3xl w-full">
+                    <li class="">
+                        <a href="index.html"
+                            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-700 hover:bg-white mr-4 hover:rounded-md">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html"
+                            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-700 hover:bg-white mr-4 hover:rounded-md">
+                            Game Info
+                        </a>
+                    </li>
+                    <li>
+                        <a href="news.html"
+                            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-700 hover:bg-white mr-4 hover:rounded-md">
+                            News
+                        </a>
+                    </li>
+                </ul>
                 <div>
                     <a href="#"
                         class="inline-block text-3xl px-4 py-2 leading-none border rounded text-white border-white bg-yellow-600 hover:border-transparent hover:text-yellow-700 hover:bg-white mt-4 lg:mt-0">Pre-Order</a>
@@ -49,10 +82,10 @@
         </nav>
     </header>
 
-    <main class="flex-grow flex justify-center items-center">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-            <div class="aspect-video">
-                <iframe width="792" height="445" src="https://www.youtube.com/embed/9hjico7nYvo?si=xtm6v0i8DpydYyMe"
+    <main class="">
+        <div class="flex flex-wrap justify-center gap-12">
+            <div class="aspect-video max-w-3xl w-full">
+                <iframe class="w-full h-full " src="https://www.youtube.com/embed/9hjico7nYvo?si=xtm6v0i8DpydYyMe"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
@@ -62,8 +95,8 @@
                 </h2>
             </div>
 
-            <div class="aspect-video relative">
-                <iframe width="792" height="445" src="https://www.youtube.com/embed/G97lx7orMN8?si=u7TOZ6eICztbyFZw"
+            <div class="aspect-video max-w-3xl w-full">
+                <iframe class="w-full h-full" src="https://www.youtube.com/embed/G97lx7orMN8?si=u7TOZ6eICztbyFZw"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
@@ -76,12 +109,12 @@
     </main>
 
 
-    <footer class="bg-gradient-to-b from-black to-[#142B3D] border-t-2 border-white mt-auto">
-        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-4">
+    <footer class="bg-gradient-to-b from-black to-[#142B3D] border-t-2 border-white w-full mt-auto">
+        <div class="w-full mx-auto p-4 md:py-4">
             <div class="sm:flex sm:items-center sm:justify-between">
                 <a href="https://www.ubisoft.com/en-us/game/assassins-creed/mirage"
                     class="flex items-center mb-4 sm:mb-0">
-                    <img src="../images/ubisoft-logo.png" class="h-16 mr-3" alt="Ubisoft Logo" />
+                    <img src="./images/ubisoft-logo.png" class="h-16 mr-3" alt="Ubisoft Logo" />
 
                 </a>
                 <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">@<a
@@ -89,14 +122,18 @@
                     CSS</span>
                 <a href="https://www.ubisoft.com/en-us/game/assassins-creed/mirage"
                     class="flex items-center mb-4 sm:mb-0">
-                    <img src="../images/Mirage-Logo-2.png" class="h-16 mr-3" alt="Assassin's Creed Mirage Logo" />
+                    <img src="./images/Mirage-Logo-2.png" class="h-16 mr-3" alt="Assassin's Creed Mirage Logo" />
 
                 </a>
             </div>
         </div>
     </footer>
 
-
+    <script>
+        function handleClick() {
+            document.getElementById("dropdown").classList.toggle("!top-[110px]");
+        }
+    </script>
 
 </body>
 
