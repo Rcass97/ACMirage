@@ -1191,6 +1191,18 @@ body {
     gap: 3rem;
   }
 
+  .xl\:gap-24 {
+    gap: 6rem;
+  }
+
+  .xl\:gap-64 {
+    gap: 16rem;
+  }
+
+  .xl\:gap-80 {
+    gap: 20rem;
+  }
+
   .xl\:p-4 {
     padding: 1rem;
   }
