@@ -612,6 +612,10 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .mr-4 {
   margin-right: 1rem;
 }
@@ -626,14 +630,6 @@ body {
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
-.mb-8 {
-  margin-bottom: 2rem;
 }
 
 .block {
@@ -761,8 +757,8 @@ body {
   justify-content: space-evenly;
 }
 
-.gap-0 {
-  gap: 0px;
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .gap-14 {
@@ -771,18 +767,6 @@ body {
 
 .gap-4 {
   gap: 1rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
-}
-
-.gap-8 {
-  gap: 2rem;
-}
-
-.gap-10 {
-  gap: 2.5rem;
 }
 
 .rounded {
@@ -814,27 +798,14 @@ body {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-yellow-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(202 138 4 / var(--tw-bg-opacity));
-}
-
-.bg-\[\] {
-  background-color: ;
-}
-
-.bg-\[\#\] {
-  background-color: #;
-}
-
 .bg-\[\#D99870\] {
   --tw-bg-opacity: 1;
   background-color: rgb(217 152 112 / var(--tw-bg-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-60 {
@@ -888,6 +859,10 @@ body {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .px-4 {
@@ -1049,28 +1024,9 @@ body {
 }
 
 @media (min-width: 640px) {
-  .sm\:my-10 {
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-  }
-
   .sm\:my-12 {
     margin-top: 3rem;
     margin-bottom: 3rem;
-  }
-
-  .sm\:my-4 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .sm\:my-6 {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .sm\:mb-10 {
-    margin-bottom: 2.5rem;
   }
 
   .sm\:max-w-xl {
@@ -1156,16 +1112,6 @@ body {
 }
 
 @media (min-width: 1280px) {
-  .xl\:my-8 {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  .xl\:my-10 {
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-  }
-
   .xl\:h-16 {
     height: 4rem;
   }
@@ -1188,10 +1134,6 @@ body {
 
   .xl\:gap-0 {
     gap: 0px;
-  }
-
-  .xl\:gap-64 {
-    gap: 16rem;
   }
 
   .xl\:gap-8 {
@@ -1234,17 +1176,7 @@ body {
 }
 
 @media (min-width: 1536px) {
-  .\32xl\:gap-64 {
-    gap: 16rem;
-  }
-
   .\32xl\:gap-20 {
     gap: 5rem;
-  }
-
-  @media not all and (min-width: 1280px) {
-    .\32xl\:max-xl\:gap-64 {
-      gap: 16rem;
-    }
   }
 }
