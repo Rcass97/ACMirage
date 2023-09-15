@@ -20,7 +20,7 @@
 
     <header>
         <nav
-            class="flex items-center justify-between flex-wrap bg-gradient-to-b from-[#142B3D] to-black p-6 border-b-2 border-white relative z-30 h-28">
+            class="flex items-center justify-between flex-wrap bg-gradient-to-b from-[#142B3D] to-black p-6 border-b-2 border-white relative z-20 h-28">
             <div class="flex items-center flex-shrink-0 text-white mr-6 h-auto w-60">
                 <a href="index.html"><img class="object-contain" src="./images/combined-logo.png"
                         alt="Assassin's Creed Mirage Assassin Logo"></a>
@@ -52,21 +52,35 @@
             </div>
         </nav>
         <nav>
-            <div class="w-full flex-col absolute top-[-300px] z-20 duration-200 transition-all ease-in-out items-start bg-gradient-to-b from-black to-[#142B3D] border-b-2 border-white p-4"
+            <div class="w-full flex-col absolute top-[-300px] z-10 duration-200 transition-all ease-in-out items-start bg-gradient-to-b from-black to-[#142B3D] border-b-2 border-white p-4"
                 id="dropdown">
                 <ul class="text-3xl w-full">
-                    <li class="">
+                    <li>
                         <a href="index.html"
                             class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-700 hover:bg-white mr-4 hover:rounded-md">
                             Home
                         </a>
                     </li>
                     <li>
-                        <a href="about.html"
-                            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-700 hover:bg-white mr-4 hover:rounded-md">
-                            Game Info
-                        </a>
+                        <button onclick="aboutClick()"><a href="#"
+                                class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-700 hover:bg-white mr-4 hover:rounded-md">
+                                Game Info
+                            </a></button>
                     </li>
+                    <ul class="text-[16px] w-full hidden border-y-2 border-white mt-4" id="aboutdropdown">
+                        <li>
+                            <a href="characters.html"
+                                class="block lg:inline-block lg:mt-0 text-white hover:text-yellow-700 hover:bg-white mr-4 hover:rounded-md">
+                                Characters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="story.html"
+                                class="block lg:inline-block lg:mt-0 text-white hover:text-yellow-700 hover:bg-white mr-4 hover:rounded-md">
+                                Story
+                            </a>
+                        </li>
+                    </ul>
                     <li>
                         <a href="news.html"
                             class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-700 hover:bg-white mr-4 hover:rounded-md">
@@ -94,10 +108,15 @@
                 <div class="flex flex-row items-center justify-center">
                     <div class="flex-shrink-0 w-1/2 p-4 sm:p-8
                          lg:p-16">
-                         <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/hzaHDLqbSMo?si=zICaO1puDQLAhit3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe class="w-full aspect-video"
+                            src="https://www.youtube.com/embed/hzaHDLqbSMo?si=zICaO1puDQLAhit3"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
                     </div>
                     <div class="w-1/2 p-6">
-                        <h2 class="text-sm sm:text-lg lg:text-2xl 2xl:text-4xl font-bold">ASSASSIN'S CREED MIRAGE: THE ROUND CITY OF BAGHDAD</h2>
+                        <h2 class="text-sm sm:text-lg lg:text-2xl 2xl:text-4xl font-bold">ASSASSIN'S CREED MIRAGE: THE
+                            ROUND CITY OF BAGHDAD</h2>
                         <p class="mt-1 2xl:mt-6 text-[10px] sm:text-sm lg:text-lg 2xl:text-xl">Watch now &gt;</p>
                     </div>
                 </div>
@@ -109,13 +128,14 @@
                 <div class="flex flex-row items-center justify-center">
                     <div class="flex-shrink-0 w-1/2 p-4 sm:p-8
                          lg:p-16">
-                        <img class="rounded-xl object-cover" src="./images/ACM_collector_thumbnail.png" alt="Left Image">
+                        <img class="rounded-xl object-cover" src="./images/ACM_collector_thumbnail.png"
+                            alt="Left Image">
                     </div>
                     <div class="w-1/2 p-6">
-                        <h2 class="text-sm sm:text-lg lg:text-2xl 2xl:text-4xl font-bold">DISCOVER
+                        <h2 class="text-xs sm:text-lg lg:text-2xl 2xl:text-4xl font-bold">DISCOVER
                             THE ASSASSIN’S
                             CREED MIRAGE COLLECTOR’S CASE</h2>
-                        <p class="mt-1 2xl:mt-6 text-[10px] sm:text-sm lg:text-lg 2xl:text-xl">Get the full
+                        <p class="mt-1 2xl:mt-6 text-[8px] sm:text-sm lg:text-lg 2xl:text-xl">Get the full
                             Assassin
                             experience with exclusive physical items and digital bonus content!</p>
                     </div>
@@ -131,8 +151,10 @@
                         <img class="rounded-xl object-cover" src="./images/Cosplay_Guide_Keyart.png" alt="Left Image">
                     </div>
                     <div class="w-1/2 p-6">
-                        <h2 class="text-sm sm:text-lg lg:text-2xl 2xl:text-4xl font-bold">ASSASSIN'S CREED MIRAGE BASIM AND ROSHAN COSPLAY GUIDE</h2>
-                        <p class="mt-1 2xl:mt-6 text-[10px] sm:text-sm lg:text-lg 2xl:text-xl">An article hosting the Cosplay Guide for Basim and Roshan from Assassin's Creed Mirage</p>
+                        <h2 class="text-xs sm:text-lg lg:text-2xl 2xl:text-4xl font-bold">ASSASSIN'S CREED MIRAGE BASIM
+                            AND ROSHAN COSPLAY GUIDE</h2>
+                        <p class="mt-1 2xl:mt-6 text-[8px] sm:text-sm lg:text-lg 2xl:text-xl">An article hosting the
+                            Cosplay Guide for Basim and Roshan from Assassin's Creed Mirage</p>
                     </div>
                 </div>
             </div>
@@ -163,6 +185,11 @@
     <script>
         function handleClick() {
             document.getElementById("dropdown").classList.toggle("!top-[110px]");
+
+        }
+
+        function aboutClick() {
+            document.getElementById("aboutdropdown").classList.toggle("hidden");
         }
     </script>
 
