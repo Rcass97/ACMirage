@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assassin's Creed Mirage</title>
+    <link rel="icon" type="image/x-icon" href="./favicon/favicon.ico">
+    <link rel="stylesheet" href="./styles.css" media="print" onload="this.media='all'">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto&family=Roboto+Condensed&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'">
+</head>
+
+<body style="background-image: url(' ./images/905cbc82d321beea1051babb4b6fc057.png'),
+    url('./images/1271236.jpg'); background-repeat: repeat, no-repeat; background-attachment: fixed;
+    background-size: contain, cover; background-position: center;" class="flex flex-col min-h-screen">
+
+    <header>
+        <nav
+            class="flex items-center justify-between flex-wrap bg-gradient-to-b from-[#142B3D] to-black p-6 border-b-2 border-white relative z-20 h-28">
+            <div class="flex items-center flex-shrink-0 text-white mr-6 h-auto w-60">
+                <a href="index.html"><img class="object-contain" src="./images/combined-logo.png"
+                        alt="Assassin's Creed Mirage Assassin Logo"></a>
+            </div>
+            <div class="w-full hidden flex-grow lg:flex lg:items-center lg:w-auto ">
+                <div class="text-3xl lg:flex-grow">
+                    <a href="index.html"
+                        class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-700 hover:bg-white mr-4 hover:rounded-md">
+                        Home
+                    </a>
+                    <a href="#"
+                        class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-700 hover:bg-white mr-4 hover:rounded-md">
+                        Game Info
+                    </a>
+                    <a href="news.html"
+                        class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-700 hover:bg-white mr-4 hover:rounded-md">
+                        News
+                    </a>
+                </div>
+                <div>
+                    <a href="#"
+                        class="inline-block text-3xl px-4 py-2 leading-none border rounded text-white border-white bg-[#D99870] hover:border-transparent hover:text-yellow-700 hover:bg-white mt-4 lg:mt-0">Pre-Order</a>
+                </div>
+            </div>
+            <div class="lg:hidden w-10">
+                <button class="text-white" onclick="handleClick()">
+                    <img class="invert w-full" src="./images/list.png">
+                </button>
+            </div>
+        </nav>
+        <nav>
+            <div class="w-full flex-col absolute top-[-300px] z-10 duration-200 transition-all ease-in-out items-start bg-gradient-to-b from-black to-[#142B3D] border-b-2 border-white p-4"
+                id="dropdown">
+                <ul class="text-3xl w-full">
+                    <li>
+                        <a href="index.html"
+                            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-700 hover:bg-white mr-4 hover:rounded-md">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <button onclick="aboutClick()"><a href="#"
+                                class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-700 hover:bg-white mr-4 hover:rounded-md">
+                                Game Info
+                            </a></button>
+                    </li>
+                    <ul class="text-[16px] w-full hidden border-y-2 border-white mt-4" id="aboutdropdown">
+                        <li>
+                            <a href="characters.html"
+                                class="block lg:inline-block lg:mt-0 text-white hover:text-yellow-700 hover:bg-white mr-4 hover:rounded-md">
+                                Characters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="story.html"
+                                class="block lg:inline-block lg:mt-0 text-white hover:text-yellow-700 hover:bg-white mr-4 hover:rounded-md">
+                                Story
+                            </a>
+                        </li>
+                    </ul>
+                    <li>
+                        <a href="news.html"
+                            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-700 hover:bg-white mr-4 hover:rounded-md">
+                            News
+                        </a>
+                    </li>
+                </ul>
+                <div>
+                    <a href="preorder.html"
+                        class="inline-block text-3xl px-4 py-2 leading-none border rounded text-white border-white bg-[#D99870] hover:border-transparent hover:text-yellow-700 hover:bg-white mt-4 lg:mt-0">Pre-Order</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <main class="flex flex-1 flex-col justify-center flex-wrap items-center">
+        <div class="text-center text-white text-5xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] my-6">
+            <h2>Pre-Order</h2>
+        </div>
+        <div class="flex flex-wrap justify-center gap-14">
+            <div class="p-1 m-5">
+                <div>
+                    <img class="rounded-t-lg" src="./images/62ea4f8e09372571f2736a71.jpg">
+                </div>
+                <div class="bg-[#f4f0e8] flex flex-col items-center p-2 rounded-b-lg">
+                    <h2>
+                        <h2 class="font-bold text-2xl">Standard Edition</h2>
+                    </h2>
+                    <div class="flex flex-col items-center justify-center pt-2">
+                        <ul class="w-full pl-2 text-sm list-disc">
+                            <li>Assassin's Creed Mirage</li>
+                        </ul>
+                        <button
+                            onclick="window.open('https://store.ubisoft.com/us/assassins-creed-mirage/62ea4f8e09372571f2736a71.html?lang=en_US')"
+                            class="rounded-2xl border-white bg-[#D99870] hover:border-transparent hover:text-[#D99870] hover:bg-white p-2 mt-4">Pre-Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-1 m-5">
+                <div>
+                    <img class="rounded-t-lg" src="./images/62ea4b5609372571f2736a6b_webp.jpg">
+                </div>
+                <div class="bg-[#f4f0e8] flex flex-col items-center p-2 rounded-b-lg">
+                    <h2>
+                        <h2 class="font-bold text-2xl">Deluxe Edition</h2>
+                    </h2>
+                    <div class="flex flex-col items-center justify-center pt-2">
+                        <ul class="w-full pl-2 text-sm list-disc">
+                            <li>Assassin's Creed Mirage</li>
+                            <li>Deluxe Pack</li>
+                            <li>Digital Collectibles</li>
+                        </ul>
+                        <button
+                            onclick="window.open('https://store.ubisoft.com/us/assassins-creed-mirage-deluxe-edition/62ea4b5609372571f2736a6b.html?lang=en_US')"
+                            class="rounded-2xl border-white bg-[#D99870] hover:border-transparent hover:text-[#D99870] hover:bg-white p-2 mt-4">Pre-Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-1 m-5">
+                <div>
+                    <img class="rounded-t-lg w-96" src="./images/FdSCg-3X0AIwR8J.jpg">
+                </div>
+                <div class="bg-[#f4f0e8] flex flex-col items-center p-2 rounded-b-lg">
+                    <h2>
+                        <h2 class="font-bold text-2xl">Deluxe Edition</h2>
+                    </h2>
+                    <div class="flex flex-col items-center justify-center pt-2">
+                        <div class="flex justify-between flex-nowrap">
+                            <ul class="w-full p-2 text-sm list-disc">
+                                <li>Assassin's Creed Mirage</li>
+                                <li>Deluxe Pack</li>
+                                <li>Digital Collectibles</li>
+                                <li>Selected Game Soundtrack</li>
+                                <li>Exclusive Steelbook</li>
+                            </ul>
+                            <ul class="w-full p-2 text-sm list-disc">
+                                <li>Basim Figurine</li>
+                                <li>Baghdad Map</li>
+                                <li>Mini-Artbook</li>
+                                <li>Basim's Brooch</li>
+                            </ul>
+                        </div>
+                        <button
+                            onclick="window.open('https://www.ubisoft.com/en-us/game/assassins-creed/mirage/news-updates/1hpVO9xbRUwWMs0i6ILVXY/discover-the-assassins-creed-mirage-collectors-case')"
+                            class="rounded-2xl border-white bg-[#D99870] hover:border-transparent hover:text-[#D99870] hover:bg-white p-2 mt-4">Pre-Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer class="bg-gradient-to-b from-black to-[#142B3D] border-t-2 border-white">
+        <div class="w-full p-4 xl:p-4">
+            <div class="flex items-center justify-between">
+                <a href="https://www.ubisoft.com/en-us/game/assassins-creed/mirage" class="flex items-center">
+                    <img src="./images/ubisoft-logo.png" class="h-8 xl:h-16" alt="Ubisoft Logo" />
+
+                </a>
+                <span class="block text-[8px] sm:text-lg xl:text-lg text-gray-500 text-center dark:text-gray-400">@<a
+                        href="https://github.com/Rcass97" class="hover:underline"> Reed Cass</a> // Made using Tailwind
+                    CSS</span>
+                <a href="https://www.ubisoft.com/en-us/game/assassins-creed/mirage" class="flex items-center">
+                    <img src="./images/Mirage-Logo-2.png" class="h-8 xl:h-16" alt="Assassin's Creed Mirage Logo" />
+
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function handleClick() {
+            document.getElementById("dropdown").classList.toggle("!top-[110px]");
+
+        }
+
+        function aboutClick() {
+            document.getElementById("aboutdropdown").classList.toggle("hidden");
+        }
+    </script>
+</body>
+
+</html>

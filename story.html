@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assassin's Creed Mirage</title>
+    <link rel="icon" type="image/x-icon" href="./favicon/favicon.ico">
+    <link rel="stylesheet" href="./styles.css" media="print" onload="this.media='all'">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto&family=Roboto+Condensed&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'">
+</head>
+
+<body style="background-image: url(' ./images/905cbc82d321beea1051babb4b6fc057.png'),
+    url('./images/assassins-creed-mirage-map-baghdad-overview.jpg'); background-repeat: repeat, no-repeat; background-attachment: fixed;
+    background-size: contain, cover; background-position: center;" class="flex flex-col min-h-screen">
+
+    <header>
+        <nav
+            class="flex items-center justify-between flex-wrap bg-gradient-to-b from-[#142B3D] to-black p-6 border-b-2 border-white relative z-20 h-28">
+            <div class="flex items-center flex-shrink-0 text-white mr-6 h-auto w-60">
+                <a href="index.html"><img class="object-contain" src="./images/combined-logo.png"
+                        alt="Assassin's Creed Mirage Assassin Logo"></a>
+            </div>
+            <div class="w-full hidden flex-grow lg:flex lg:items-center lg:w-auto ">
+                <div class="text-3xl lg:flex-grow">
+                    <a href="index.html"
+                        class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-700 hover:bg-white mr-4 hover:rounded-md">
+                        Home
+                    </a>
+                    <a href="#"
+                        class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-700 hover:bg-white mr-4 hover:rounded-md">
+                        Game Info
+                    </a>
+                    <a href="news.html"
+                        class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-700 hover:bg-white mr-4 hover:rounded-md">
+                        News
+                    </a>
+                </div>
+                <div>
+                    <a href="preorder.html"
+                        class="inline-block text-3xl px-4 py-2 leading-none border rounded text-white border-white bg-[#D99870] hover:border-transparent hover:text-yellow-700 hover:bg-white mt-4 lg:mt-0">Pre-Order</a>
+                </div>
+            </div>
+            <div class="lg:hidden w-10">
+                <button class="text-white" onclick="handleClick()">
+                    <img class="invert w-full" src="./images/list.png">
+                </button>
+            </div>
+        </nav>
+        <nav>
+            <div class="w-full flex-col absolute top-[-300px] z-10 duration-200 transition-all ease-in-out items-start bg-gradient-to-b from-black to-[#142B3D] border-b-2 border-white p-4"
+                id="dropdown">
+                <ul class="text-3xl w-full">
+                    <li>
+                        <a href="index.html"
+                            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-700 hover:bg-white mr-4 hover:rounded-md">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <button onclick="aboutClick()"><a href="#"
+                                class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-700 hover:bg-white mr-4 hover:rounded-md">
+                                Game Info
+                            </a></button>
+                    </li>
+                    <ul class="text-[16px] w-full hidden border-y-2 border-white mt-4" id="aboutdropdown">
+                        <li>
+                            <a href="characters.html"
+                                class="block lg:inline-block lg:mt-0 text-white hover:text-yellow-700 hover:bg-white mr-4 hover:rounded-md">
+                                Characters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="story.html"
+                                class="block lg:inline-block lg:mt-0 text-white hover:text-yellow-700 hover:bg-white mr-4 hover:rounded-md">
+                                Story
+                            </a>
+                        </li>
+                    </ul>
+                    <li>
+                        <a href="news.html"
+                            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-700 hover:bg-white mr-4 hover:rounded-md">
+                            News
+                        </a>
+                    </li>
+                </ul>
+                <div>
+                    <a href="#"
+                        class="inline-block text-3xl px-4 py-2 leading-none border rounded text-white border-white bg-[#D99870] hover:border-transparent hover:text-yellow-700 hover:bg-white mt-4 lg:mt-0">Pre-Order</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <main class="flex flex-1 flex-col justify-center flex-wrap items-center">
+        <div class="text-center text-white text-5xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] my-6">
+            <h2>Story</h2>
+        </div>
+        <div class="text-center text-black text-md">
+            <p class="mb-3 mx-3 p-1">
+                In Assassin's Creed Mirage, you are Basim, a cunning street thief with nightmarish visions seeking
+                answers and justice.
+            </p>
+            <p class="mx-3 p-1">
+                Join an ancient organization and come to understand a new creed – one that will change Basim’s fate in
+                ways he never could have imagined.
+            </p>
+        </div>
+        <div class="border-2 border-gray-400 p-1 m-5 border-opacity-25 rounded-lg">
+            <div>
+                <img class="rounded-t-lg" src="./images/acm-parcour-climb.png">
+            </div>
+            <div class="bg-[#f4f0e8] h-full flex flex-col items-center p-5 rounded-b-lg">
+                <h2>
+                    <h2 class="font-bold text-xl">A Powerful Coming-Of-Age Story</h2>
+                </h2>
+                <div class="flex items-center justify-center pt-5">
+                    <img class="w-2/4 p-1 float-left" src="./images/svgexport-1.png">
+                    <p class="w-3/4 pl-2 text-sm">Discover a narrative-driven action-adventure experience that follows
+                        the
+                        transformation of a defiant young man into a refined Master Assassin with a conflicted destiny.
+                        Meet
+                        an inspiring cast of characters who will shape Basim’s destiny and may be more than what they
+                        seem…
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-2 border-gray-400 p-1 m-5 border-opacity-25 rounded-lg">
+            <div>
+                <img class="rounded-t-lg" src="./images/acm-stealth_jpg.png">
+            </div>
+            <div class="bg-[#f4f0e8] h-full flex flex-col items-center p-5 rounded-b-lg">
+                <h2>
+                    <h2 class="font-bold text-xl">The Ultimate Assassin</h2>
+                </h2>
+                <div class="flex items-center justify-center pt-5">
+                    <p class="w-3/4 pr-2 text-sm">Become the most versatile Assassin in franchise history. Parkour
+                        seamlessly through the city and leverage the largest assortment of tools to date. Get contracts
+                        at
+                        the Assassin’s bureaus, collect vital clues, and stealthily take down targets with more visceral
+                        assassinations than ever before.</p>
+                    <img class="w-2/4 p-1 float-left" src="./images/svgexport-1(1).png">
+                </div>
+            </div>
+        </div>
+
+        <div class="border-2 border-gray-400 p-1 m-5 border-opacity-25 rounded-lg">
+            <div>
+                <img class="rounded-t-lg" src="./images/acm-bagdad-vista_jpg.png">
+            </div>
+            <div class="bg-[#f4f0e8] h-full flex flex-col items-center p-5 rounded-b-lg">
+                <h2>
+                    <h2 class="font-bold text-xl">An Immersive, Reactive City</h2>
+                </h2>
+                <div class="flex items-center justify-center pt-5">
+                    <img class="w-2/4 p-1 float-left" src="./images/svgexport-1(2).png">
+                    <p class="w-3/4 pl-2 text-sm">Explore a dense and vibrant city whose inhabitants react to your every
+                        move. Uncover the secrets of four unique districts, from the industrial Karkh to the lush
+                        gardens of
+                        the Round City. Discover surprising world events and interact with historical figures that
+                        shaped
+                        the Golden Age of Baghdad.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-2 border-gray-400 p-1 m-5 border-opacity-25 rounded-lg">
+            <div>
+                <img class="rounded-t-lg" src="./images/acm-alamuth-vista_jpg.png">
+            </div>
+            <div class="bg-[#f4f0e8] h-full flex flex-col items-center p-5 rounded-b-lg">
+                <h2>
+                    <h2 class="font-bold text-xl">A Tribute To An Original</h2>
+                </h2>
+                <div class="flex items-center justify-center pt-5">
+                    <p class="w-3/4 pr-2 text-sm">Experience a modern take on the features and gameplay that have
+                        defined a
+                        franchise for 15 years. Journey to Alamut, the legendary home of the Assassins who laid the
+                        foundations of the Creed in this heartfelt homage to the game that started it all.</p>
+                    <img class="w-2/4 p-1 float-left" src="./images/svgexport-1(3).png">
+                </div>
+            </div>
+
+    </main>
+
+
+
+    <footer class="bg-gradient-to-b from-black to-[#142B3D] border-t-2 border-white">
+        <div class="w-full p-4 xl:p-4">
+            <div class="flex items-center justify-between">
+                <a href="https://www.ubisoft.com/en-us/game/assassins-creed/mirage" class="flex items-center">
+                    <img src="./images/ubisoft-logo.png" class="h-8 xl:h-16" alt="Ubisoft Logo" />
+
+                </a>
+                <span class="block text-[8px] sm:text-lg xl:text-lg text-gray-500 text-center dark:text-gray-400">@<a
+                        href="https://github.com/Rcass97" class="hover:underline"> Reed Cass</a> // Made using Tailwind
+                    CSS</span>
+                <a href="https://www.ubisoft.com/en-us/game/assassins-creed/mirage" class="flex items-center">
+                    <img src="./images/Mirage-Logo-2.png" class="h-8 xl:h-16" alt="Assassin's Creed Mirage Logo" />
+
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function handleClick() {
+            document.getElementById("dropdown").classList.toggle("!top-[110px]");
+
+        }
+
+        function aboutClick() {
+            document.getElementById("aboutdropdown").classList.toggle("hidden");
+        }
+    </script>
+</body>
+
+</html>
